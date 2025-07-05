@@ -1,0 +1,43 @@
+.navbar-warning {
+    background-color: black;
+}
+
+.fas.fa-bars {
+    color: #ff0000; 
+}
+
+
+.far.fa-comments {
+    color: white; 
+}
+
+.far.fa-comments:hover {
+    color: red; 
+}
+
+
+.far.fa-bell {
+    color: white; 
+}
+.far.fa-bell:hover {
+    color: red; 
+}
+
+.fas.fa-expand-arrows-alt{
+    color: white;
+}
+.fas.fa-expand-arrows-alt:hover{
+    color: red;
+}
+
+.fas.fa-sign-out-alt{
+    color: red;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    }
+
+.navbar-light .navbar-nav:hover .nav-link {
+    color: red;
+    }

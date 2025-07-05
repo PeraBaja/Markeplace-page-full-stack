@@ -1,0 +1,105 @@
+.slider-container {
+    position: relative;
+    margin: 5px auto;
+    height: 275px;  /* Mayor altura para las imágenes */
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative; /* Necesario para que el texto se posicione sobre la imagen */
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+    border: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.9);
+}
+
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot, .dot:hover {
+    background-color: #717171;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 30px; 
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    width: 80%; 
+    transform: translateX(-50%) translateY(20px); 
+    opacity: 0; 
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.slide.active .text-overlay {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0); 
+}
+
+.text-overlay h2 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.text-overlay p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.text-overlay strong {
+    font-size: 22px;
+    color: #ff6f61;
+}

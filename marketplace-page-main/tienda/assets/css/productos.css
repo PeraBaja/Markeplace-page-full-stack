@@ -1,0 +1,83 @@
+/* Contenedor de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 1rem;
+}
+
+
+/* Tarjeta del producto */
+.item-producto {
+    position: relative;
+    width: 300px; 
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    background: #f9f9f9; 
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en la tarjeta */
+.item-producto:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+
+/* Imagen del producto */
+.item-producto img {
+    width: auto; 
+    max-width: 90%; 
+    max-height: 60%; 
+    object-fit: contain; 
+    margin: 0 auto;
+    border-radius: 10px; 
+}
+
+
+/* Nombre del producto */
+.producto_nombre {
+    font-size: 20px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    width: 90%; 
+}
+
+/* Precio del producto */
+.producto_precio {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+/* Botón "Ver producto" */
+.producto_enlace {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover en el botón */
+.producto_enlace:hover {
+    background-color: #e85547; 
+    transform: scale(1.05); 
+}

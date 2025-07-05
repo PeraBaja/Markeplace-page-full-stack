@@ -1,0 +1,28 @@
+.sidebar-light-warning {
+    background-color: white;
+}
+
+.sidebar-light-warning .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: red;
+    color: #1f2d3d;
+    }
+
+.sidebar-light-warning {
+    background-color: black;
+    }
+
+[class*=sidebar-light-] .sidebar a {
+    color: white;
+    }
+
+[class*=sidebar-light-] .sidebar a:hover {
+    color: red;
+    }
+
+.sidebar-light-warning .nav-sidebar>.nav-item>.nav-link:hover {
+    color: red;
+    }
+.sidebar-light-warning .nav-sidebar>.nav-item>.nav-link.active:hover {
+    background-color: red;
+    color: #1f2d3d;
+    }

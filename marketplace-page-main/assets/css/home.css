@@ -1,0 +1,77 @@
+.bg-info {
+    background-color: lightslategray !important;
+    }
+
+.bg-success {
+    background-color: lightcoral!important;
+    }
+
+.bg-warning{
+    background-color: lightseagreen !important;
+    color: white !important;
+}
+
+.bg-danger{
+    background-color: grey !important;
+}
+.bg-warning, .bg-warning>a {
+    color: white!important;
+    }
+
+#Usuarios
+.bg-dark, .bg-dark>a {
+    color: white!important;
+    }
+.bg-dark {
+    background-color: lightslategray !important;
+    }
+
+.btn-warning {
+    color: #1f2d3d;
+    background-color: transparent;
+    border-color: transparent;
+    }
+.btn-warning:hover {
+    color: #1f2d3d;
+    background-color: goldenrod;
+    border-color: transparent;
+    }
+.btn-danger {
+color: #fff;
+background-color: lightslategray;
+border-color: transparent;
+box-shadow: none;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: lightslategray;
+    border-color: transparent;
+    }
+.page-link {
+z-index: 2;
+color: lightslategray;
+text-decoration: none;
+background-color: white;
+border-color: lightslategray;
+}
+.page-item.disabled .page-link {
+    color: lightslategray;
+    pointer-events: none;
+    cursor: auto;
+    background-color: white;
+    border-color: lightslategray;
+    }
+
+a {
+    color: lightslategray;
+    text-decoration: none;
+    background-color: transparent;
+    }
+
+a:hover {
+    color: red;
+    text-decoration: none;
+    background-color: transparent;
+    }

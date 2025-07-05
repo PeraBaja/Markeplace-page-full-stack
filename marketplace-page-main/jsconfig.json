@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "checkJs": true, // ⚠️ clave
+        "target": "es2020", // o lo que uses
+        "module": "esnext"
+    },
+    "include": [
+        "**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "**/*.test.js",
+        "plugins"
+    ]
+}
