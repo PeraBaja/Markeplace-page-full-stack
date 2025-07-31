@@ -48,4 +48,4 @@ uvicorn main:app --reload
 - Para practicar con el framework de fast api y su ecosistema.
 
 - Para practicar el desarrollo fullstack
-enfocandome en hacer endpoints robustos, con autenticación de usuario y administración de permisos por roless
+enfocandome en hacer endpoints robustos, con autenticación de usuario y administración de permisos por roles
