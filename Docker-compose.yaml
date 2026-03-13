@@ -1,3 +1,4 @@
+name: marketplace-orchestration
 services:
   api:
     build: .
