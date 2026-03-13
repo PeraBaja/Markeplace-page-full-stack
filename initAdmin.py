@@ -3,7 +3,7 @@ from Esquemas.Usuario import UsuarioCreate, Rol
 from Database.generator import generate_db
 from sqlalchemy.orm import Session
 from Modelos.UsuarioModelo import UsuarioModelo
-from auth.seguridad import pwd_context  # o donde tengas definido CryptContext
+from auth.seguridad import pwd_context
 
 
 def crear_admin_inicial():
@@ -26,7 +26,7 @@ def crear_admin_inicial():
         dirección_correo="admin@example.com",
         rol=Rol.Administrador,
     )
-
+    print(datos_admin.contraseña)
     nuevo_admin = UsuarioModelo(**datos_admin.model_dump())
 
     db.add(nuevo_admin)

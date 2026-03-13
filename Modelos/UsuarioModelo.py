@@ -9,7 +9,7 @@ class UsuarioModelo(Base):
     dirección_correo = Column(
         "dirección_correo", String(50), nullable=False, unique=True
     )
-    contraseña = Column("contraseña", String(500), nullable=False)
+    contraseña = Column("contraseña", nullable=False)
     apellido_nombre = Column("apellido_nombre", String(100), nullable=False)
     teléfono = Column("teléfono", String(15))
     ciudad = Column("ciudad", String(30))
